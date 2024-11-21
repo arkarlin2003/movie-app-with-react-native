@@ -7,9 +7,10 @@ import CustomButton from "@/components/CustomButton";
 import {Link} from "expo-router";
 
 
-const SignIn = () => {
+const SignUp = () => {
 
     const [form,setForm] = useState({
+        username:'',
         email:'',
         password:'',
     })
@@ -22,15 +23,16 @@ const SignIn = () => {
                         uri: 'https://github.com/adrianhajdin/aora/blob/main/assets/images/logo.png?raw=true'
                     }} className={'w-[140px] h-[100px]'} resizeMode="contain"/>
 
-                    <Text className={'text-white text-3xl font-bold'}>Sign In</Text>
+                    <Text className={'text-white text-3xl font-bold'}>Sign Up</Text>
 
-                    <FormField title={'Email'} otherStyles={'mt-12'} value={form.email} placeholder={'example@gmail.com'} handleValue={(e)=> setForm((pre)=> ({...pre,email:e}))}/>
+                    <FormField title={'Username'} otherStyles={'mt-12'} value={form.username} placeholder={'alex jhon'} handleValue={(e)=> setForm((pre)=> ({...pre,username:e}))}/>
+                    <FormField title={'Email'} otherStyles={'mt-6'} value={form.email} placeholder={'example@gmail.com'} handleValue={(e)=> setForm((pre)=> ({...pre,email:e}))}/>
                     <FormField title={'Password'} otherStyles={'mt-6'}  value={form.password} placeholder={'*******'} handleValue={(e)=> setForm((pre)=> ({...pre,password:e}))}/>
 
-                    <CustomButton title={'Sign In'} containerStyles={'mt-10'}/>
+                    <CustomButton title={'Sign Up'} containerStyles={'mt-10'}/>
 
                     <View className={'mt-6'}>
-                        <Text className={'text-white text-lg text-center'}>Don't have an account? <Link href={'/sign-up'} className={'text-secondary font-bold'}>Signup</Link></Text>
+                        <Text className={'text-white text-lg text-center'}>Already have an account? <Link href={'/sign-in'} className={'text-secondary font-bold'}>Signin</Link></Text>
                     </View>
 
 
@@ -41,4 +43,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn
+export default SignUp
