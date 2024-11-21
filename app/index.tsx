@@ -42,7 +42,11 @@ const LandingPage = () => {
                     </Text>
 
                     <CustomButton title={'Continue with Email'} containerStyles={'mt-10'} handlePress={()=> router.push('/sign-in')}/>
-
+                    {/*<TouchableOpacity disabled={false} activeOpacity={0.7}*/}
+                    {/*                  className={`w-full bg-secondary h-16 rounded-xl flex flex-row gap-2 justify-center items-center `}>*/}
+                    {/*    <Text className={'font-bold text-lg '}>{'title'}</Text>*/}
+                    {/*            <ActivityIndicator size='small' color="#fffff"/>*/}
+                    {/*</TouchableOpacity>*/}
                 </View>
             </ScrollView>
             <StatusBar backgroundColor="#161622" style="light" />

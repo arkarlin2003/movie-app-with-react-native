@@ -34,6 +34,21 @@ const SignIn = () => {
                     </View>
 
 
+                    {/*<View className={`mt-5`}>*/}
+                    {/*    <Text className={'text-white font-semibold text-lg'}>{'title'}</Text>*/}
+                    {/*    <View*/}
+                    {/*        className={'h-16 bg-black-100 rounded-xl w-full flex items-center flex-row px-4 border border-black-200  mt-2 '}>*/}
+                    {/*        <TextInput  className={'text-white flex-1'}*/}
+                    {/*                   placeholderTextColor={'#7B7B8B'}/>*/}
+                    {/*                <TouchableOpacity>*/}
+                    {/*                    <Image*/}
+                    {/*                        source={{uri: !true ? "https://github.com/adrianhajdin/aora/blob/main/assets/icons/eye.png?raw=true" : "https://github.com/adrianhajdin/aora/blob/main/assets/icons/eye-hide.png?raw=true"}}*/}
+                    {/*                        className="w-6 h-6"*/}
+                    {/*                        resizeMode="contain"*/}
+                    {/*                    />*/}
+                    {/*                </TouchableOpacity>*/}
+                    {/*    </View>*/}
+                    {/*</View>*/}
                 </View>
             </ScrollView>
             <StatusBar style={'light'}/>
